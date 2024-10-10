@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link href="css/biografia.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <a class="logo" href="#"><img src="img/logo.png" alt="Logo do Site"/></a>
+            
+            <nav id="navLinks">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conteudos.html">Conteúdos</a></li>
+                    <li><a href="comunidade.html">Comunidade</a></li>
+                    <li><a href="#">Locais de Apoio</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul><!--nav-links-->
+            </nav><!--navLinks-->
+
+            <button class="sair">Sair</button>
+        </div><!--center-->
+    </header>
+
+    <section class="section-perfil">
+        <div class="background-img"></div><!--background-img-->
+
+        <div class="center">
+            <div class="perfil-img"></div><!--perfil-img-->
+            
+            
+        <div class="perfil-text">
+                <h2 class="perfil-name">Vinicius Emanuel</h2>
+                <p class="cargo">DEV em ascensão</p>
+                <div class="social-links">
+                    <a href="#">
+                        <div class="social-item">
+                            <img src="img/instagram.png"/>
+                            <span>_mr_lonely0_0</span>
+                        </div><!--social-item-->
+                    </a>
+
+                    <a href="#">
+                        <div class="social-item">
+                            <img src="img/facebook.png"/>
+                            <span>Vincius Emanuel</span>
+                        </div><!--social-item-->
+                    </a>
+
+                    <a href="#">
+                        <div class="social-item">
+                            <img src="img/twitter.png"/>
+                            <span>Alexandre_Morais_Com_Cabelo</span>
+                        </div><!--social-item-->
+                    </a>
+                </div><!--social-links-->
+            </div><!--perfil-text-->
+            <br>
+                <br><h6>mó sono</h6>
+        </div><!--center-->
+    </section><!--section-perfil-->
+
+    <section class="section-perfil-content">
+        <img class="perfil-content-background" src="img/parque.jpg" alt=""/>
+        <nav id="perfilLinks">
+            <div class="center">
+                <ul class="perfil-links">
+                    <li><a href="conteudos.html">Posts</a></li>
+                    <li><a href="#">Seguindo</a></li>
+                    <li><a href="biografia.html">Biografia</a></li>
+                </ul><!--perfil-links-->
+            </div><!--center-->
+        </nav><!--perfilLinks-->
+
+        <div class="center">
+            <div class="postagens-container">
+                <div class="post">
+                    <a href="#">
+                        <div class="post-perfil">
+                            <img class="post-img" src="img/perfil.jpg" alt="foto de perfil">
+                            <div class="perfil-info">
+                                <p class="post-name">Vinicius Emanuel</p>
+                                <p class="post-horario">Qui, 03 Out de 2024</p>
+                            </div><!--perfil-info-->
+                        </div><!--post-perfil-->
+                        <div></div><br>
+                                <p class="biografia">Olá me chamo Vinicius Emanuel. Sou aluno do curso de ADS na Faculdade Uninassau.
+                                    <br>Amo bolo de rolo e parques... Nas horas vagas finjo ser DEV.
+                                </p>
+                        <!-- <img class="postagem-img" src="img/parque.jpg" alt="foto de um parque"/> -->
+                    <!-- </a> -->
+
+                    <!-- <a href="#">
+                        <div class="post-perfil">
+                            <img class="post-img" src="img/perfil.jpg" alt="foto de perfil">
+                            <div class="perfil-info">
+                                <p class="post-name">Vinicius Emanuel</p>
+                                <p class="post-horario">Qua, 04 Set de 2023</p>
+                            </div>perfil-info-->
+                        <!-- </div>post-perfil -->
+                        <!-- <img class="postagem-img" src="img/cozinhar.jpg" alt="foto de um parque"/> -->
+                    <!-- </a> -->
+
+                    <!-- <a href="#">
+                        <div class="post-perfil">
+                            <img class="post-img" src="img/perfil.jpg" alt="foto de perfil">
+                            <div class="perfil-info">
+                                <p class="post-name">Vinicius Emanuel</p>
+                                <p class="post-horario">Sex, 09 Mar de 2023</p>
+                            </div>perfil-info-->
+                        </div><!--post-perfil-->
+                        <!-- <img class="postagem-img" src="img/teatro.jpg" alt="foto de um parque"/> -->
+                    <!-- </a> --> 
+                </div><!--post-->
+            </div><!--postagens-container-->
+        </div><!--center-->
+    </section><!--section-perfil-content-->
+
+    <footer>
+        <div class="center">
+            <img src="img/logo.png" alt="logo do site"/>
+            <ul class="social-medias">
+                <li><a href="#"><img src="img/instagram.png" alt="link para o instagram"/></a></li>
+                <li><a href="#"><img src="img/facebook.png" alt="link para o facebook"/></a></li>
+                <li><a href="#"><img src="img/twitter.png" alt="link para o twitter"/></a></li>
+            </ul><!--social-medias-->
+        </div><!--center-->
+    </footer>
+
+    <script src="js/perfil.js"></script>
+    <script>
+        document.querySelector('.sair').addEventListener('click', function() {
+            window.location.href = 'entrar.html';
+        });
+    </script>
+</body>
+</html>
