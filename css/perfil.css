@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sen:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --preto: #232536;
+    --baunilha: #FBF6EA;
+    --baunilha-escuro: #FAE9C7;
+    --ciano-morto: #69A2AF;
+    --branco: #fff;
+    --amarelo: #FFD050;
+    --roxo: #6E48B4;
+    --cinza: #6D6E76;
+}
+
+.center{
+    max-width: 1440px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 3%;
+}
+
+header{
+    background: var(--preto);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75);
+}
+
+header .center{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'inter';
+}
+
+.logo{
+    transition: 0.3s;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin-right: 30px;
+    transition: 0.3s
+}
+
+.nav-links a{
+    color: #fff;
+    display: block;
+    line-height: 70px;
+    transition: 0.3s
+}
+
+.sair{
+    width: 120px;
+    height: 50px;
+    font-family: 'sen';
+    font-weight: 600;
+    font-size: .9rem;
+    transition: 0.3s;
+    border: 0px;
+    cursor: pointer;
+}
+
+.logo:hover,
+.nav-links a:hover,
+.sair:hover{
+    opacity: 0.7;
+}
+
+/* section-perfil */
+
+.section-perfil .center{
+    position: relative;
+}
+
+.background-img{
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.perfil-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    background-image: url('../img/perfil.jpg');
+    background-size: cover;
+    background-position-y: -30px;
+    position: absolute;
+    top: -160px;
+    box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75);
+}
+
+.perfil-text{
+    margin-left: 310px;
+}
+
+.perfil-name{
+    font-family: 'sen';
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.cargo{
+    font-family: 'inter';
+    margin: 5px 0 20px;
+    font-size: 0.85rem;
+}
+
+.social-links{
+    display: flex;
+    gap: 30px;
+}
+
+.social-links a{
+    color: var(--cinza);
+}
+
+.social-item{
+    display: flex;
+    align-items: center;
+}
+
+.social-item img{
+    margin-right: 8px;
+    width: 13px;
+    height: 13px;
+}
+
+.social-item span{
+    font-family: 'inter';
+    font-size: 0.8rem;
+}
+
+/* section-perfil-content */
+
+.section-perfil-content{
+    position: relative;
+    background: rgba(0,0,0,0.3);
+}
+
+.perfil-content-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-perfil-content .center{
+    margin: 0 auto;
+}
+
+#perfilLinks{
+    background: var(--preto);
+    box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75);
+}
+
+.perfil-links{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.perfil-links a{
+    font-family: 'sen';
+    color: var(--branco);
+    padding: 10px 20px;
+    border: 2px solid var(--branco);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.perfil-links a:hover{
+    background: var(--branco);
+    color: var(--preto);
+}
+
+.post-perfil{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.post{
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.post a{
+    padding: 30px;
+    background: var(--branco);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.post a:nth-of-type(3){
+    grid-column: span 2;
+}
+
+.post a:hover{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 19px -4px rgba(255,255,255,0.75);
+}
+
+.post-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.perfil-info{
+    font-family: 'inter';
+}
+
+.post-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.post-horario{
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+.postagem-img{
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* footer */
+
+footer{
+    background: var(--preto);
+    padding: 30px 0;
+}
+
+footer .center{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-medias{
+    display: flex;
+}
+
+.social-medias li{
+    margin-left: 30px;
+}

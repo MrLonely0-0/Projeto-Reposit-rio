@@ -1,0 +1,253 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Sen:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+
+:root{
+    --preto: #232536;
+    --baunilha: #FBF6EA;
+    --baunilha-escuro: #FAE9C7;
+    --ciano-morto: #69A2AF;
+    --branco: #fff;
+    --amarelo: #FFD050;
+    --roxo: #6E48B4;
+    --cinza: #6D6E76;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.center{ /*Esta classe vai centralizar o conteúdo e vai determinar qual é a largura máxima*/
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+header{
+    background: var(--preto);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between; /* Alinha a logo à esquerda e os links/botão à direita */
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo img{
+    width: 140px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.nav-links a {
+    color: var(--branco);
+    font-family: Inter;
+}
+
+.nav-links .btn{
+    color: var(--preto);
+}
+
+.nav-links .btn:hover{
+    background: #cbcbcb;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 35px;
+    font-weight: 700;
+    color: var(--preto);
+    background: var(--branco);
+    transition: background 0.3s;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.menu{
+    color: var(--branco);
+}
+
+/* locais-apoio */
+
+.local-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.local-img{
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.local-box:nth-of-type(1) .local-img{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/upinha-nossa-senhora.jpg');
+}
+
+.local-box:nth-of-type(2) .local-img{
+    order: 2;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/salomao-kelner.jpg');
+}
+
+.local-box:nth-of-type(3) .local-img{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/chao-estrelas.jpg');
+}
+
+.local-box:nth-of-type(4) .local-img{
+    order: 2;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/apipucos.jpg');
+}
+
+.local-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.local-box a{
+    color: var(--preto);
+    transition: color 0.3s;
+}
+
+.local-box a:hover{
+    color: var(--Medium-grey, #3d5c63);
+}
+
+.local-title{
+    font-size: 2.2rem;
+    letter-spacing: -2px;
+}
+
+.local-para{
+    max-width: 800px;
+    margin-top: 20px;
+    display: inline-block;
+    line-height: 28px;
+    font-family: 'Inter';
+    font-size: .9rem;
+    color: var(--cinza);
+}
+
+footer{
+    padding: 150px 0;
+    background: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    padding: 60px;
+}
+
+.footer-content h2{
+    font-size: 2.1rem;
+    color: var(--branco);
+    width: 50%;
+    letter-spacing: -2px;
+}
+
+.footer-email{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-email input[type='email']{
+    margin-right: 30px;
+    width: 60%;
+    padding-left: 20px;
+}
+
+.footer-email .btn{
+    background: var(--amarelo);
+}
+
+.footer-info{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    color: var(--cinza);
+}
+
+.footer-info span{
+    font-family: 'Inter';
+}
+
+a .social{
+    margin-left: 30px;
+    color: var(--cinza);
+}
+
+@media screen and (max-width: 950px){
+    .icon{
+        display: block;
+    }
+
+    .nav-links{
+        background: var(--branco);
+        position: absolute;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-links li{
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-links li a{
+        display: block;
+        padding: 20px 0;
+        color: var(--preto);
+    }
+
+    .nav-links li:hover{
+        background: #cbcbcb;
+    }
+}

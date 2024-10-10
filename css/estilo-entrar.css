@@ -1,0 +1,219 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Sen:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+
+:root {
+    --preto: #232536;
+    --baunilha: #FBF6EA;
+    --baunilha-escuro: #FAE9C7;
+    --ciano-morto: #69A2AF;
+    --branco: #fff;
+    --amarelo: #FFD050;
+    --roxo: #6E48B4;
+    --cinza: #6D6E76;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.center {
+    /*Esta classe vai centralizar o conteúdo e vai determinar qual é a largura máxima*/
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+header {
+    background: var(--preto);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75);
+}
+
+header .center {
+    display: flex;
+    justify-content: space-between;
+    /* Alinha a logo à esquerda e os links/botão à direita */
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo img {
+    width: 140px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.nav-links a {
+    color: var(--branco);
+    font-family: Inter;
+}
+
+.nav-links .btn {
+    color: var(--preto);
+}
+
+.nav-links .btn:hover {
+    background: #cbcbcb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 35px;
+    font-weight: 700;
+    color: var(--preto);
+    background: var(--branco);
+    transition: background 0.3s;
+}
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    color: var(--branco);
+}
+
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url('../img/fundo.jpg');
+    background-size: cover;
+    height: 90vh;
+}
+
+.register-section h1 {
+    width: 337.246px;
+    color: var(--branco);
+    text-align: center;
+    font-family: 'Sen', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+.login-content {
+    text-align: center;
+}
+
+#loginForm {
+    width: 337.246px;
+    margin: 0 auto;
+    /* Centraliza o formulário horizontalmente */
+}
+
+/* Outras regras de estilo conforme necessário */
+
+footer {
+    background: var(--preto);
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info span{
+    font-family: 'Inter';
+    color: var(--cinza);
+}
+
+.social{
+    color: var(--cinza);
+}
+
+.footer-email {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-email input[type='email'] {
+    margin-right: 30px;
+    width: 60%;
+    padding-left: 20px;
+}
+
+.footer-email .btn {
+    background: var(--amarelo);
+}
+
+
+.login-content p{
+    text-align: center;
+    color: #fff;
+}
+
+#loginForm {
+    width: 337.246px;
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+/* Outras regras de estilo conforme necessário */
+
+#loginForm div {
+    margin-bottom: 20px; /* Adiciona espaço entre os elementos do formulário */
+}
+
+#loginForm input {
+    width: 100%; /* Faz os campos de entrada ocuparem 100% da largura disponível */
+    padding: 10px; /* Adiciona algum espaço interno aos campos de entrada */
+    box-sizing: border-box; /* Garante que o preenchimento não afeta a largura total */
+}
+
+#loginForm button {
+    width: 100%; /* Faz o botão ocupar 100% da largura disponível */
+    padding: 10px; /* Adiciona algum espaço interno ao botão */
+    box-sizing: border-box; /* Garante que o preenchimento não afeta a largura total */
+    background-color: var(--amarelo); /* Adiciona a cor de fundo amarela */
+    color: var(--preto); /* Adiciona a cor de texto preta */
+    font-weight: 700;
+    border: none; /* Remove a borda do botão */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#loginForm button:hover {
+    background: #cbcbcb; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
+/* ... (seu CSS existente) ... */
+
+.image-container img {
+    max-width: 100%;
+}
+
+#loginForm {
+    width: 337.246px;
+    margin: 0 auto;
+}
